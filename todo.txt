@@ -1,2 +1,6 @@
 modulate and neaten code
 make proper 1000x1000 texture
+fix lighting
+make models
+THINK OF A CONCEPT AND MECHANIC
+k*** yourself
