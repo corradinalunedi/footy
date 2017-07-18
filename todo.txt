@@ -1,0 +1,2 @@
+modulate and neaten code
+make proper 1000x1000 texture
