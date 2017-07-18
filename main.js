@@ -81,7 +81,7 @@ scene.add( test );
 	composer.addPass( new THREE.RenderPass( scene, camera ) );
 	effect = new THREE.ShaderPass( THREE.PixelateShader );
 		//pixililated ammount less is more//
-	effect.uniforms[ 'intensity' ].value = -24; //-.32 is good pixilation more than -1 is no pixilation
+	effect.uniforms[ 'intensity' ].value = -4; //-.32 is good pixilation more than -1 is no pixilation
 	effect.uniforms['u_resolution'] = {
 		type: "v2", value: new THREE.Vector2()
 	}
@@ -103,6 +103,7 @@ function draw() {
 	requestAnimationFrame( draw );
 camera.position.x = Math.sin( Date.now() * 0.0002 ) * 200;	// experiment with code from the snippets menu here	
 	//renderer.render( scene, camera );
+	camera.lookAt(scene.position);
 	postprocessing.composer.render( scene, camera );
 }
 
